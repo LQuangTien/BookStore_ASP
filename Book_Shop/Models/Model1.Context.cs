@@ -13,10 +13,10 @@ namespace Book_Shop.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class Book_StoreEntities2 : DbContext
+    public partial class Book_StoreEntities : DbContext
     {
-        public Book_StoreEntities2()
-            : base("name=Book_StoreEntities2")
+        public Book_StoreEntities()
+            : base("name=Book_StoreEntities")
         {
         }
     
@@ -26,6 +26,7 @@ namespace Book_Shop.Models
         }
     
         public virtual DbSet<Product> Products { get; set; }
+        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
         public virtual DbSet<User> Users { get; set; }
     }
 }

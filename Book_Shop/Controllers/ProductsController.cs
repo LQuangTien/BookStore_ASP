@@ -15,7 +15,7 @@ namespace Book_Shop.Controllers
     [AuthorizeController]
     public class ProductsController : Controller
     {
-        private Book_StoreEntities2 db = new Book_StoreEntities2();
+        private Book_StoreEntities db = new Book_StoreEntities();
 
         // GET: Products
         public ActionResult Index(int? page)

@@ -11,7 +11,7 @@ namespace Book_Shop.Controllers
     public class StoreController : Controller
     {
         // GET: Store
-        private Book_StoreEntities2 db = new Book_StoreEntities2();
+        private Book_StoreEntities db = new Book_StoreEntities();
 
         // GET: Products
         public ActionResult Index(int? page)
@@ -39,6 +39,10 @@ namespace Book_Shop.Controllers
             return View(links.ToPagedList(pageNumber, pageSize));
         }
         public ActionResult About ()
+        {
+            return View();
+        }
+        public ActionResult HouseHold()
         {
             return View();
         }

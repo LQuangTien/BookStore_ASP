@@ -12,13 +12,12 @@ namespace Book_Shop.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class User
+    public partial class sysdiagram
     {
-        public int id { get; set; }
-        public string account { get; set; }
-        public string pass_word { get; set; }
-        public string mail { get; set; }
-        public Nullable<int> lever { get; set; }
-        public string avatar { get; set; }
+        public string name { get; set; }
+        public int principal_id { get; set; }
+        public int diagram_id { get; set; }
+        public Nullable<int> version { get; set; }
+        public byte[] definition { get; set; }
     }
 }
